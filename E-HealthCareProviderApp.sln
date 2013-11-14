@@ -1,0 +1,65 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "E-HealthCareProviderApp", "E-HealthCareProviderApp\E-HealthCareProviderApp.csproj", "{DAF9DF1D-1CFA-42CE-8512-C03F36B368FA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EHealthCareDataAccess", "..\EHealthCarePatientApp\EHealthCareDataAccess\EHealthCareDataAccess.csproj", "{86108DC8-3A59-4433-9D9F-19C6AC669DA7}"
+EndProject
+Project("{6141683F-8A12-4E36-9623-2EB02B2C2303}") = "E-HealthCareProviderAppSetup", "E-HealthCareProviderAppSetup\E-HealthCareProviderAppSetup.isproj", "{7884B290-167B-4262-A739-06AD18805C7A}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 3
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://ranjandailata.visualstudio.com/defaultcollection
+		SccProjectUniqueName0 = ..\\EHealthCarePatientApp\\EHealthCareDataAccess\\EHealthCareDataAccess.csproj
+		SccProjectName0 = ../EHealthCarePatientApp/EHealthCareDataAccess
+		SccLocalPath0 = ..\\EHealthCarePatientApp\\EHealthCareDataAccess
+		SccLocalPath1 = .
+		SccProjectUniqueName2 = E-HealthCareProviderApp\\E-HealthCareProviderApp.csproj
+		SccProjectName2 = E-HealthCareProviderApp
+		SccLocalPath2 = E-HealthCareProviderApp
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		CD_ROM|Any CPU = CD_ROM|Any CPU
+		Debug|Any CPU = Debug|Any CPU
+		DVD-5|Any CPU = DVD-5|Any CPU
+		Release|Any CPU = Release|Any CPU
+		SingleImage|Any CPU = SingleImage|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DAF9DF1D-1CFA-42CE-8512-C03F36B368FA}.CD_ROM|Any CPU.ActiveCfg = Release|Any CPU
+		{DAF9DF1D-1CFA-42CE-8512-C03F36B368FA}.CD_ROM|Any CPU.Build.0 = Release|Any CPU
+		{DAF9DF1D-1CFA-42CE-8512-C03F36B368FA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DAF9DF1D-1CFA-42CE-8512-C03F36B368FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DAF9DF1D-1CFA-42CE-8512-C03F36B368FA}.DVD-5|Any CPU.ActiveCfg = Debug|Any CPU
+		{DAF9DF1D-1CFA-42CE-8512-C03F36B368FA}.DVD-5|Any CPU.Build.0 = Debug|Any CPU
+		{DAF9DF1D-1CFA-42CE-8512-C03F36B368FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DAF9DF1D-1CFA-42CE-8512-C03F36B368FA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DAF9DF1D-1CFA-42CE-8512-C03F36B368FA}.SingleImage|Any CPU.ActiveCfg = Release|Any CPU
+		{DAF9DF1D-1CFA-42CE-8512-C03F36B368FA}.SingleImage|Any CPU.Build.0 = Release|Any CPU
+		{86108DC8-3A59-4433-9D9F-19C6AC669DA7}.CD_ROM|Any CPU.ActiveCfg = Release|Any CPU
+		{86108DC8-3A59-4433-9D9F-19C6AC669DA7}.CD_ROM|Any CPU.Build.0 = Release|Any CPU
+		{86108DC8-3A59-4433-9D9F-19C6AC669DA7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{86108DC8-3A59-4433-9D9F-19C6AC669DA7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{86108DC8-3A59-4433-9D9F-19C6AC669DA7}.DVD-5|Any CPU.ActiveCfg = Debug|Any CPU
+		{86108DC8-3A59-4433-9D9F-19C6AC669DA7}.DVD-5|Any CPU.Build.0 = Debug|Any CPU
+		{86108DC8-3A59-4433-9D9F-19C6AC669DA7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{86108DC8-3A59-4433-9D9F-19C6AC669DA7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{86108DC8-3A59-4433-9D9F-19C6AC669DA7}.SingleImage|Any CPU.ActiveCfg = Release|Any CPU
+		{86108DC8-3A59-4433-9D9F-19C6AC669DA7}.SingleImage|Any CPU.Build.0 = Release|Any CPU
+		{7884B290-167B-4262-A739-06AD18805C7A}.CD_ROM|Any CPU.ActiveCfg = CD_ROM
+		{7884B290-167B-4262-A739-06AD18805C7A}.CD_ROM|Any CPU.Build.0 = CD_ROM
+		{7884B290-167B-4262-A739-06AD18805C7A}.Debug|Any CPU.ActiveCfg = DVD-5
+		{7884B290-167B-4262-A739-06AD18805C7A}.Debug|Any CPU.Build.0 = DVD-5
+		{7884B290-167B-4262-A739-06AD18805C7A}.DVD-5|Any CPU.ActiveCfg = DVD-5
+		{7884B290-167B-4262-A739-06AD18805C7A}.DVD-5|Any CPU.Build.0 = DVD-5
+		{7884B290-167B-4262-A739-06AD18805C7A}.Release|Any CPU.ActiveCfg = SingleImage
+		{7884B290-167B-4262-A739-06AD18805C7A}.Release|Any CPU.Build.0 = SingleImage
+		{7884B290-167B-4262-A739-06AD18805C7A}.SingleImage|Any CPU.ActiveCfg = SingleImage
+		{7884B290-167B-4262-A739-06AD18805C7A}.SingleImage|Any CPU.Build.0 = SingleImage
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

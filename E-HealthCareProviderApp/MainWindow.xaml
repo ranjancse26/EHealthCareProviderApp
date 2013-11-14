@@ -1,0 +1,80 @@
+﻿<Controls:MetroWindow x:Class="E_HealthCareProviderApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:Controls="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
+        xmlns:wpfsl="http://schemas.softarcs.com/wpfsmartlibrary"
+        Title="EHealthCare Provider App" WindowState="Maximized" Loaded="WindowLoaded">
+
+    <Window.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Colours.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Fonts.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Controls.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Accents/Blue.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Accents/BaseLight.xaml" />
+                <ResourceDictionary Source="/WPFSmartLibraryLight35;component/ResourceDictionaries/CommonRD.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Window.Resources>
+    
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50" />
+            <RowDefinition />
+            <RowDefinition />
+       </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+    
+        <ComboBox x:Name="cmbPatients" Grid.Row="0" FontSize="24" Grid.Column="0"/>
+
+        <Button HorizontalAlignment="Left" Margin="0,10,0,0" Grid.Row="1" Grid.Column="0" x:Name="appointmentButton"
+                VerticalAlignment="Top" 
+                Click="AppointmentClick" Background="White" Foreground="White" 
+                FontSize="36" Height="216" Width="287" >
+            <StackPanel>
+                <Image Source="Icons/Appointment.png" Width="278" Height="147" />
+                <TextBlock TextAlignment="Center" Height="61"><Run Text="Appointment"/></TextBlock>
+            </StackPanel>
+        </Button>
+
+        <Button HorizontalAlignment="Left" Margin="0,10,0,0" Grid.Row="1" Grid.Column="1" 
+                VerticalAlignment="Top"  x:Name="UploadPatientDicomButton"
+                Click="UploadPatientDicomClick" Background="White" Foreground="White" 
+                FontSize="36" Height="216" Width="287" >
+            <StackPanel>
+                <Image Source="Icons/dicom.jpg" Width="278" Height="147" />
+                <TextBlock TextAlignment="Center" Height="61"><Run Text="Upload Dicom"/></TextBlock>
+            </StackPanel>
+        </Button>
+
+        <Button HorizontalAlignment="Left" Margin="0,10,0,0" Grid.Row="1" Grid.Column="2" 
+                VerticalAlignment="Top"  x:Name="DicomViewerButton"
+                Click="DicomViewerClick" Background="White" Foreground="White" 
+                FontSize="36" Height="216" Width="287" >
+            <StackPanel>
+                <Image Source="Icons/Documents-icon.png" Width="278" Height="147" />
+                <TextBlock TextAlignment="Center" Height="61"><Run Text="Dicom Viewer"/></TextBlock>
+            </StackPanel>
+        </Button>
+        
+        <Button Content="Load Patients" Grid.Column="1" HorizontalAlignment="Left" 
+                VerticalAlignment="Top" Width="252" Height="50" Click="LoadPatients" Grid.ColumnSpan="2"/>
+
+        <wpfsl:SmartLoginOverlay x:Name="SmartLoginOverlayControl" Grid.Row="0" 
+                                         Background="#236B8E" 
+										 FullSpan="On"
+										 IsUserOptionAvailable="True"
+										 UserName="{Binding UserName}"
+										 Password="{Binding Password}"
+										 Command="{Binding SubmitCommand}"
+										 CommandParameter="{Binding RelativeSource={RelativeSource Self} }" Margin="0,0,-58,0" />
+
+    </Grid>
+    
+</Controls:MetroWindow>

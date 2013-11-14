@@ -1,0 +1,24 @@
+﻿<Controls:MetroWindow  x:Class="E_HealthCareProviderApp.ProviderRegistrationOrLogon"
+        xmlns:Controls="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="New Provider Registration/Logon" Height="288" Width="558" WindowStartupLocation="CenterScreen">
+
+    <Window.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Colours.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Fonts.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Controls.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Accents/Blue.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Accents/BaseLight.xaml" />
+           </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Window.Resources>
+    
+    <Grid Margin="0,0,2,0">
+        <Button Content="Provider Registration" HorizontalAlignment="Left" VerticalAlignment="Top" Width="560" Height="102" Click="ProviderRegistrationButtonClick"/>
+     
+        <Button Content="Login" HorizontalAlignment="Left" VerticalAlignment="Top" Width="560" Height="102" Click="LoginButtonClick" Margin="0,155,0,0"/>
+    </Grid>
+</Controls:MetroWindow >
